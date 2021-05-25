@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            //string 型
+            console.log('study 1 day');
+            console.log('study 2 day');
+            var num=3;
+            console.log('study' + num + 'day');   //变量参加要用 + 号
+            console.log('study' + 4 + 'day');
+            //Boolean 型
+            var flag=true;      //true参与运算做加法为1
+            var flag1=false;    //false参与运算做加法为0
+            console.log(flag+1);
+            console.log(flag1+1);
+            //undefined 型 声明变量未赋值就是undefined 未定义数据类型
+            var str;
+            console.log(str);
+            var stred=undefined;
+            console.log(stred+'blue');   //结果undefinedblue
+            console.log(stred+1);        //结果 NaN 和数字相加是 NaN
+            //null 空值
+            var txt=null;
+            console.log(txt+'bule');
+            console.log(txt+1);       //null 空值就是空值，不改变其他的变量
+            //typeof 检测变量类型
+            var number1=1;
+            console.log(typeof number1);  //number
+            var str1='blue';
+            console.log(typeof str1);     //string
+            var flag2=true;
+            console.log(typeof flag2);    //boolean
+            var var1=undefined;
+            console.log(typeof var1);     //undefined
+            var txt1=null;
+            console.log(typeof txt1);     //null
+           // prompt 获取来的是string类型
+           var age=prompt('输入你的年龄');
+           console.log(typeof age);
+
+        </script>
+    </body>
+</html>
