@@ -9,9 +9,13 @@
     </head>
     <body>
         <script>
-            var number=prompt("输入一个数");
-            alert("结果是"+number);
-            console.log("测试结果"+number);
+            var number=prompt("输入一个数");    //输入
+            alert("结果是"+number);            //警告
+            console.log("测试结果"+number);    //程序员可见（浏览器F12）
+
+            var age=prompt('输入你的年龄');
+            var str='今年' + age + '岁了';
+            alert(str);
         </script>
     </body>
 </html>
