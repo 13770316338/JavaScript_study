@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+</head>
+
+<body>
+    <script>
+        //转化string类型
+        var num = 1;
+        alert(num.toString());   //tostring()方法
+        var num1 = 1;
+        alert(String(num));      //String()强制转化方法
+        var num2 = 1;
+        alert(num + '你好');      //连接字符串的方法
+        //转化数字型
+        var str = '3';
+        alert(parseInt(str));     //转化整数 int型
+        console.log(parseInt('120px'));    //去除单位px
+        var str1 = '3.13';
+        alert(parseFloat(str1));  //转化浮点型 float型
+        console.log(parseFloat('120px'));  //去除单位px
+        var num4 = 1;
+        console.log(Number(num4));   //Number()转化
+        console.log(Number('123'));
+        console.log('12' - '11');      //隐式转化
+        //转化成boolean型
+        console.log(Boolean(''));
+        console.log(Boolean(NaN));
+        console.log(Boolean(null));
+        console.log(Boolean(0));
+        console.log(Boolean(undefined));    //false
+        console.log(Boolean('12'));
+        console.log(Boolean(num));
+        console.log(Boolean(12));           //true
+        
+
+    </script>
+</body>
+
+</html>
