@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            //JavaScript的预解析
+            //(1)
+            //console.log(num);  undefined 无类型
+            //(2)
+            //console.log(num);   undefined
+            //var num=10;
+            //相当于
+            // var num;
+            // console.log(num);
+            // num=10;
+            //(3) 
+            // function fn(){
+            //     console.log(10);  可以
+            // }
+            // fn();
+            //(4)
+            // fn();
+            // var fn=function(){  报错
+            //     console(10);
+            // }
+            //相当于
+            //var fn;  //函数的调用必须写在函数表达式的下面
+            //fn();
+            //fn=function(){
+            //    console.log(10);
+            //}
+
+            //[1]js会把代码分两步进行   预解析   代码执行
+            //1.预解析会把所有的 var 还要 function 提升到当前作用域的最前面 
+            //2.代码执行 按照代码书写顺序从上到下的执行
+            //[2]预解析分为 变量预解析（变量提升）和 函数预解析（函数提升）
+            //1.变量提升 是把所有变量声明提升到当前作用域最前面 不提升赋值操作
+            //2.函数提升 是把所有函数声明提升到当前作用域最前面 不调用函数
+
+            
+        </script>
+    </body>
+</html>

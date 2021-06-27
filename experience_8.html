@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            //1.用字面量创建对象
+            // var obj={
+            //     usname: '磊磊',
+            //     age:15,
+            //     sex:'男',
+            //     hayhi:function(){
+            //         console.log('hi!');
+            //     }
+            // }
+            //多个属性用逗号隔开，
+            //定义采用属性名：属性值
+            //方法 ：后面跟匿名函数
+            //2.使用对象
+            //调用属性
+            // console.log(obj.age);
+            // console.log(obj['usname']);
+            // 调用方法
+            // obj.hayhi();
+
+            // 2.用new object创建对象
+            // var objc=new Object();
+            // objc.name='tutu';
+            // objc.age1=14;
+            // objc.sex1='女';
+            // objc.sayhe=function(){
+            //     console.log('hi!!!');
+            // }
+            // 用 = 赋值的方法 添加对象的属性和方法
+            // 每个属性和方法之间用 ; 号结束
+            // console.log(objc.name);
+            // console.log(objc['age1']);
+            // objc.sayhe();
+
+            //3.构造函数创建对象
+            // function S(name,age,sex){
+            //     this.name=name;
+            //     this.age=age;
+            //     this.sex=sex; 
+            //     this.able=function(able1){
+            //         console.log(able1);
+            //     }
+            // }
+            // var ldh=new S('gege',20,'男');   //调用函数返回的是一个对象
+            // console.log(ldh);
+            // console.log(ldh.name);
+            // ldh.able('唱歌');
+            // var dh=new S('wewe',17,'女');
+            // console.log(dh);
+            // console.log(dh.name);
+            // dh.able('画画');
+            //1.构造函数名字首字母要大写
+            //2.构造函数不需要return 就可以返回结果
+            //3.调用构造函数要用 new 
+            //4.属性和方法前用this
+
+            //构造函数：如S 抽象了对象的公共部分，封装到函数里面，泛指一个大类（class）
+            //创建对象：如new S ，特指某一个，通过new 关键字创建对象的过程我们也称为对象实体化
+
+            //遍历对象
+            // var obj={
+            //     usname: '磊磊',
+            //     age:15,
+            //     sex:'男',
+            //     hayhi:function(){
+            //         console.log('hi!');
+            //     }
+
+            // }
+            // for(var k in obj){
+            //     console.log(k);    //变量k 输出 得到的是 属性名
+            //     console.log(obj[k]);  //obj[k] 输出 得到的是 属性值
+            // }
+        </script>
+    </body>
+</html>

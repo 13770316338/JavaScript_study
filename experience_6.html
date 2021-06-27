@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            // var num=10;   //全局变量
+            // function fn(){
+            //     var num1=20;  //局部变量
+            // }
+            // console.log(num);
+            // console.log(num1);
+
+            //作用域链
+            //内部函数访问外部函数变量，采用的使链式查找方式来决定取哪个值，遵循就近原则，由内向外一层一层查找
+            var num=10;
+            function fn(){
+                var num=20;
+                function fun(){
+                    console.log(num);
+                }
+                fun();
+            }
+            fn();
+
+
+
+
+        </script>
+    </body>
+</html>

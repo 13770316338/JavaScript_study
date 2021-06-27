@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            //字符串的不可变性
+            // var str ='aaa';
+            // console.log(str);
+            // str ='bbb';
+            // console.log(str);
+            //因为字符串的不可变性，原来的aaa还是存在的，只是bbb开辟的新的内存空间，并赋值给了str，让石头人指向了bbb的地址
+            //所以不能连续大量的拼接字符串，会有效率问题，大量的冗余
+
+            //统计字符串出现最多的字符
+            //用charAt遍历字符串
+            // var str='aaqwegasdqwgeqsdqqsda';
+            // var o={};
+            // for(var i=0;i<str.length;i++){
+            //     var chars=str.charAt(i);  //chars是字符串的每个字符
+            //     if(o[chars]){    //0[chars]得到属性值
+            //         o[chars]++;
+
+            //     }else{
+            //         o[chars]=1
+            //     }
+            // }
+            // console.log(o);
+            // var max=0;
+            // var ch='';
+            // for(var k in o){
+            //     if(o[k]>max){
+            //         max=o[k];
+            //         ch=k;
+            //     }
+            // }
+            // console.log(max);
+            // console.log('最多的字符是:'+ch);
+
+            //拼接字符串
+            // var str1='aaa';
+            // var str2='222';
+            // var str3=str1.concat(str2);
+            // console.log(str3);
+            //console.log(str3.concat(str1,str2));     跟 +  功能一样
+            
+            //截取字符
+            // var str1='abcdefg';
+            // console.log(str1.substr(2,3)); //substr（2,3）截取字符串，第一个2从索引号2开始截取，第二个3是截取三个
+
+            //替代字符串
+            // var str1='abcdefffeasd';
+            // console.log(str1.replace('f','  '));  //replace('f','  ')代替字符串中的f字符,换成空格  *只会替换第一个字符
+            // while(str1.indexOf('a')!==-1){
+            //     str1=str1.replace('a','@')  //把所有a替换成@
+            // }
+            // console.log(str1);
+        </script>
+    </body>
+</html>

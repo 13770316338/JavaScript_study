@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            //math对象  不是构造函数，直接引用属性
+            // console.log(Math.PI);  //圆周率
+            // console.log(Math.max(1,3,4));
+            // console.log(Math.min(1,3,4));
+            // //封装方法
+            // var countmath={
+            //     count:1245671251098741,
+            //     max:function(){
+            //         var max=arguments[0];
+            //         for(var i=1;i<=arguments.length;i++){
+            //             if(arguments[i]>max){
+            //                 max=arguments[i];
+            //             }
+            //         }
+            //         return max;
+            //     },
+            //     min:function(){
+            //         var min=arguments[0];
+            //         for(var i=1;i<=arguments.length;i++){
+            //             if(arguments[i]<min){
+            //                 min=arguments[i];
+            //             }
+            //         }
+            //         return min;
+            //     }
+            // }
+            // console.log(console.count);
+            // console.log(countmath.min(1,5,8));
+            // console.log(countmath.max(1,5,8));
+
+            // console.log(Math.floor(1.1));   //往小的取整
+            // console.log(Math.ceil(1.1));   //往大的取整
+            // console.log(Math.abs(-1));     //绝对0值
+            // console.log(Math.round(1.5));   //四舍五入
+
+            // console.log(Math.random());    //随机值，随机小数   0<= x <1
+            // //得到两个数之间的随机整数,且包含两个整数
+            // Math.floor(Math.random()*(max-min+1))+min
+            // function getrradom(max,min){
+            //    return Math.floor(Math.random()*(max-min+1))+min;
+            // }
+            // console.log(getrradom(10,1));
+            // //随机点名,数组需要整数下标
+            // var arr=['tutu','lala','xixi','haha','wuwu','sisi'];
+            // console.log(arr[getrradom(5,0)]);
+
+            //Date对象 是构造函数，要用new来调用日期对象
+            // var arr=new Array();   // 创建一个空数组
+            // var obj=new Object();  // 创建一个对象实例
+            // var date=new Date();   // 创建一个日期对象
+            // console.log(date);     
+            // var date1=new Date(1990,10,01);  //参数常用数字型 2000,11,01 或字符串型 '2000-11-01 8:9:8'
+            
+            //格式化日期 年月日
+            // var date=new Date();
+            // // console.log(date.getFullYear());  //返回当前日期的年
+            // // console.log(date.getMonth()+1);   //返回的月份会小1个月 要月份+1
+            // // console.log(date.getDate());      //返回几号
+            // // console.log(date.getDay());        //返回周几 周一返回1 周六返回6 周日返回0
+            // //写个 当前时间的年月日周几
+            // var year=date.getFullYear();
+            // var month=date.getMonth()+1;
+            // var date1=date.getDate();
+            // var day=date.getDay();
+            // var arr=['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+            // console.log(year +'年'+ month+'月'+date1+'日'+ arr[day]);
+
+            //格式化日期 时分秒
+            // var date=new Date();
+            // console.log(date.getHours());     //时
+            // console.log(date.getMinutes());   //分
+            // console.log(date.getSeconds());   //秒
+            //封装一个时间格式   08:08:08
+            // function gettime(){
+            //     var time=new Date();
+            //     var h=time.getHours();
+            //     h=h<10?'0'+h:h;
+            //     var m=time.getMinutes();
+            //     m=m<10?'0'+m:m;
+            //     var s=time.getSeconds();
+            //     s=s<10?'0'+s:s;
+            //     return h+':'+m+':'+s;
+                
+            // }
+            // console.log(gettime());
+            
+ 
+
+        </script>
+    </body>
+</html>

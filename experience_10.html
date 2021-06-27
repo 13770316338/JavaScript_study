@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            // 创建数组2种方式
+            // 1，数组的字面量
+            // var arr=['1','2','3'];
+            // console.log(arr[0]);
+            // 2，用new Array()
+            // var arr1=new Array(1,2,3);
+            // console.log(arr1)
+
+            
+            // 翻转数组
+            // function array(arr2){
+            //     var arr1=[];
+            //     var i;
+            //     for(i=arr2.length-1;i>=0;i--){
+            //         arr1[arr1.length]=arr2[i];
+
+            //     }
+            //     return arr1;
+            // }
+            // console.log(array([1,2,3]));
+            // console.log(array(1,2,3));
+
+            // 检验数组的2种方式
+            // (1)instanceof 运算符检测是否为数组
+            // var arr=[];   //数组
+            // var obj={};   //构造函数
+            // console.log(arr instanceof Array);
+            // console.log(obj instanceof Array);
+            // (2)Array.isArray(参数)
+            // console.log(Array.isArray(arr));
+            // console.log(Array.isArray(obj));
+
+            // //添加数组元素
+            //  var arr=[1,2,3];
+            //  arr.push(4,5);
+            //  console.log(arr.push(6));
+            //  console.log(arr);
+            //  //push是直接在数组元素后面添加，返回值是数组长度，原数组也会发生变化
+            //  arr.unshift(0,'blue');
+            //  console.log(arr.unshift('red'));
+            //  console.log(arr);
+            //  //unshift是直接在数组元素前面添加，返回值是数组长度，原数组也会发生变化
+
+            //  //删除数组元素
+            //  arr.pop();
+            //  console.log(arr.pop());
+            //  console.log(arr);
+            //  //pop()删除数组最后一个元素，返回最后一个被删除的元素，原数组发生变化
+            //  arr.shift();
+            //  console.log(arr.shift());
+            //  console.log(arr);
+            //  //()shift删除数组最后一个元素，返回最后一个被删除的元素，原数组发生变化
+
+            //筛选数组
+            // 筛选出大于10的数
+            // var arr=[12,1,52,4,2,67,32];
+            // var newarr=[];
+            // for(var i=0;i<arr.length;i++){
+            //     if(arr[i]>10){
+            //         newarr.push(arr[i]);
+            //     }
+            // }
+            // console.log(newarr);
+
+            // 获取数组元素的索引值
+            // var arr=['123','456','789','010','100'];
+            // console.log(arr.indexOf('789'));
+            // // indexOf返回第一个满足条件的索引号，如果不满足条件则会返回-1
+            // console.log(arr.lastIndexOf('010'));
+            // lastindexOf从后往前返回第一个满足条件的索引号，如果不满足条件则会返回-1
+
+            //数组查重
+            // var arr=['a','w','r','w','q','q','c','x','x','x','q','v','v','a','b','b'];
+            // var newarr=[];
+            // for(var i=0;i<arr.length;i++){
+            //     if(newarr.indexOf(arr[i])===-1){
+            //         newarr.push(arr[i]);
+            //     }
+            // }
+
+            // console.log(newarr);
+
+
+
+        </script>
+    </body>
+</html>
