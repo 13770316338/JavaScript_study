@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+    </head>
+    <body>
+        <script>
+            function S(num1,num2){
+                this.jia=parseInt(num1)+parseInt(num2);
+                this.jian=parseInt(num1)-parseInt(num2);
+                this.cheng=parseInt(num1)*parseInt(num2);
+                this.chu=parseInt(num1)/parseInt(num2);
+            }
+
+            var count=prompt('欢迎使用简易计算机\n1.加法\n2.减法\n3.乘法\n4.除法\n5.退出\n请输入你的选项：')
+            switch(parseInt(count)){
+                case 1 :var num1=prompt('第一个值');
+                        var num2=prompt('第二个值');
+                        var jia=new S(num1,num2);
+                        alert(jia.jia);
+                        break;
+                case 2 :var num1=prompt('第一个值');
+                        var num2=prompt('第二个值');
+                        var jian=new S(num1,num2);
+                        alert(jian.jian);
+                        break;
+                case 3 :var num1=prompt('第一个值');
+                        var num2=prompt('第二个值');
+                        var cheng=new S(num1,num2);
+                        alert(cheng.cheng);
+                        break;
+                case 4 :var num1=prompt('第一个值');
+                        var num2=prompt('第二个值');
+                        var chu=new S(num1,num2);
+                        alert(chu.chu);
+                        break;
+                case 5 :window.close;
+                        break;
+                default :window.close;
+                        
+            }
+        </script>
+    </body>
+</html>
